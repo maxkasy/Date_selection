@@ -4,20 +4,18 @@ from dash.dependencies import Input, Output, State
 import dash_bootstrap_components as dbc
 
 import pandas as pd
-from google.cloud import storage
+import gspread
+from google.auth.credentials import AnonymousCredentials
+from gspread_dataframe import get_as_dataframe, set_with_dataframe
 
-# Instantiate a Google Cloud Storage client
-client = storage.Client.create_anonymous_client()
-# The name of our bucket
-bucket_name = 'date_selection_data'
-# Get the bucket
-bucket = client.bucket(bucket_name)
-# The name of our spreadsheet
-file_name = 'date_time_test.csv'
+# Open the Google spreadsheet and get the first sheet
+# Note that this requires a google service account, and that the sheet date_time_test has been shared with the email address shown in dateselectionapp-72bed9b4a4b2.json
+gc = gspread.service_account(filename='dateselectionapp-72bed9b4a4b2.json')
 
 def load_data():    
-    # Reading DataFrame from the bucket
-    df = pd.read_csv(f'gs://{bucket_name}/{file_name}')
+    sheet = gc.open('date_time_test').sheet1
+    # Load the data into a pandas DataFrame
+    df = get_as_dataframe(sheet)[["Date", "Name"]]
     # Filter for rows where name is missing, but date is not missing
     df = df[df['Name'].isna() & df['Date'].notna()]
 
@@ -63,14 +61,17 @@ def update_options(n):
 )
 def update_sheet(n_clicks, selected_date, entered_name):
     if n_clicks > 0:
-        # Reading DataFrame from the bucket
-        df = pd.read_csv(f'gs://{bucket_name}/{file_name}')
+        sheet = gc.open('date_time_test').sheet1
+        # Load the data into a pandas DataFrame
+        df = get_as_dataframe(sheet)
         # Find the row to update
         row_index = df[df['Date'] == selected_date].index[0]
         # Update the 'Name' column in the found row
         df.loc[row_index, 'Name'] = entered_name
-        # Write csv to bucket
-        df.to_csv(f'gs://{bucket_name}/{file_name}', index=False)
+        # Update the specific cell in the Google Sheets data
+        # Add 2 to the row_index because Google Sheets is 1-indexed and the first row is the header
+        cell_address = f'B{row_index + 2}'
+        sheet.update(cell_address, entered_name)
         # Hide the input, radio items, and submit button, and show the thank you message
         return {'display': 'none'}, {'display': 'none'}, 'Thank you for your selection!'
     else:
