@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "dateselectionapp",
+  "private_key_id": "72bed9b4a4b224f3c58fcc70f81e9a21cd259524",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDYc5Lt3esZ0Cqe\ne8ZohCrcRpw4ceU0ksMLm+GHZwzMdOxoOlkgII0ApqaDpJSWXP4OxkeOv6h3xwe9\nizZ2lhvaLNnafdw/P5wk/UG5DcWGceoP42g2WKLGZY0nlbgNTFR1e1vDF61qG2Pc\n0Q2LiKKzkJO4P0FBFCSHhhK5rTy8GPba9W296FUDdcNk/2fi29PqunUeCwiWMTEY\n8SJaywqcPO3NpWMUUBxzyto7yAWKHERopZAr+DJGlgQPdDxMKsZkS2Rf1PC+KCMn\nX8cnrVyCOIY9wvgXMBMZMHQvijz/y+Mi1JPN5CdBZYHqb/tjKH9iDrTxHobbuwCl\n5n9oy4SdAgMBAAECggEAAsv/g95VuYgp53wESiPHEACY59Z6QTh87QtPGeT4J94s\n6IM0f/NGZHyYHeRZsoBcx2EYL0faYUMrnkSMaBzexZjFxIp9duhsrUJZKo8l1Gu9\nZrDSub0MdrwnhkbrfBSBP4wKrqssJ6OsodT7s/1d04HUlCa7wkpZ1ychhSUFag1x\nxjjNMvDyf70e7/5YPUPiq6IkCvT1/JCbp+MMFYtt/Y0Flxmj/Psi7vdeE3kC1oVJ\nWmIO8ZfdCrUNIHKsNmb1TflcYk9zqUiY6PUlGwbRt/GlGZAJezeA0Fdm4wmuXg/g\nceu0KgNl15tGtMNRGI1vZFBA7AwjlZa0h3dXDFO9ywKBgQDzgTwZ5WNzwg5+aQHr\nbIzgXBrnJY3U2U8n8iHvYuyjj7nONddUlSur3Nw2sHdBN4XF5VTXu0qMjLjl/8p/\nSrQ48rJkV8hGNL55ShGMSsvermWyJDNwJONwB/jQDVlR9O7Shuiy3HbWqOZFNDQ1\njWBcaE3KgefXEFidzqD/rDQzawKBgQDjjvTnsv1DzOE+51kqJvd0SDGDdhhABg/e\nYJatX4EH4TqUGAMiaXCLkHFFbNt69Eg8aJaa0azM5zs78GKMQw/B6eocS50GNuge\nYrSKUQnGWdXWm07TMYkjffspd58V8kC4zQ0OUtm76W2PBvD+29GGW6farJAHF1Nv\n1qfxzjAyFwKBgBXr8Ik0SXvGYJ+ovG+BWj1ojVN54gbjeWjTN5LhiQRAkC2sUzJe\nK4xRWdHimRnZ8cUbHEQ/rDpzAMJUANrs0sS9tKmr7W/El9E7hdDneusVMDqVX7wc\n1gzj6tZwHTZvooB5fMF9b4Vrty9Lv9eCXsZy7W3pvAF0i0XJsFzUF+75AoGBAIzc\nWU1zxsLJeETwAInPRS594eh2mdxH5FrLf3oivEScbx5tHsOWcUxzRSqsj9A0luKN\n+2wqjsTn/grEarxYZtCqc3jAdZr7MgRdJVTZhSt7QJtv2ANzjmih+29X1OpI4zeB\n9qr/Ljjb7i2zJksc1z5MTkNWvnElR0jbn2pXMA5RAoGBANfr5mEMeCiWsX6NZTCE\nw3NlNzwZzcXjTKSu3Swdcms2aPvGwNpuCvPxuTLuiZhZes5ArByUDp3mWCepHL7C\nImqv/F0arNXAf88rjWEw1VKF8g58JazjqlnzctpSro9fKs+u/faHaltZi5Bye78D\noORI4FI98Gt80NwKujSdrYAM\n-----END PRIVATE KEY-----\n",
+  "client_email": "dateselectionapp@dateselectionapp.iam.gserviceaccount.com",
+  "client_id": "117936037148539928355",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dateselectionapp%40dateselectionapp.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
